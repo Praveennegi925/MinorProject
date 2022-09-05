@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"/>
+    <title>HOMEPAGE</title>
+  </head>
+  <body style="background-color: rgb(159, 160, 160);">
+ 
+            <br>
+    <h1 style=" text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; " id="register">{{Value}}</h1>
+             <br>
+             <div id="formdata">
+    <form class="row g-3" style=" background-image: url(./image/img2.jpg);
+        padding: 50px;
+        font-size: 18px;
+        background-color: #9bdcd0;
+        padding-top: 20px;
+        padding-left: 300px;
+        padding-right: 300px;
+        color: white;" action="/signup.html" method="post"  >
+      <div class="col-md-6">
+        <label for="First Name" >{{Value3}}</label>
+        <input type="text" class="form-control" name="firstname" >
+      </div >
+      <div class="col-md-6">
+      <label for="Last Name ">{{Value4}}</label>
+        <input type="text" class="form-control" name="lastname" >
+      </div>
+      <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">{{Value7}}</label>
+        <input type="email" class="form-control" id="inputEmail4"  name="Email">
+      </div>
+      <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">{{Value6}}</label>
+        <input type="password" class="form-control" id="inputPassword4" name="password" >
+      </div>
+      <div class="col-12">
+      <label for="inputAddress" class="form-label">{{Value5}}</label>
+        <input type="text" class="form-control" id="inputAddress" name="Address">
+      </div>
+    
+   
+      <div class="col-md-6">
+      <label for="inputCity" class="form-label">{{Value9}}</label>
+        <input type="text" class="form-control" id="inputCity" name="City" >
+      </div>
+      <div class="col-md-4">
+      <label for="inputState" class="form-label">{{Value10}}</label>
+        <select id="inputState" class="form-select" name="state">
+          <option selected>Choose State</option>
+          <option>{{state(0)}}</option>
+          <option>{{state(1)}}</option>
+          <option>{{state(2)}}</option>
+          <option>{{state(3)}}</option>
+          <option>{{state(4)}}</option>
+          <option>{{state(5)}}</option>
+          <option>{{state(6)}}</option>
+          <option>{{state(7)}}</option>
+          <option>{{state(8)}}</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+      <label for="inputGender" class="form-label"> {{Value8}}</label>
+        <input type="text" class="form-control" id="inputGender" name="Gender" >
+      </div>
+      <div class="col-md-2">
+      <label for="inputZip" class="form-label">{{Value11}}</label>
+        <input type="text" class="form-control" id="inputZip" name="zipcode" >
+      </div>
+   
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous" ></script>
+      <script src="https://unpkg.com/vue@3"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
