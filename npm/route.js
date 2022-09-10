@@ -68,7 +68,7 @@ app.post("/login.html", (req, res) => {
                           }
                    </style>
                  </head>
-                 <body style = "background-color: rgb(178, 237, 237);" id="Profile" >
+                 <body style = "background-color: rgb(178, 237, 237);" >
                    <h1 style="text-align: center">MEMBER DETAILS</h1>
                    <div style="background-color: rgb(175, 174, 170); ">
                      <ul style="margin-top: 50px;">
